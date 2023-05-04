@@ -9,7 +9,5 @@ namespace App.Entities.Models
         public int FavoritesId { get; set; }
         public int? ProductId { get; set; }
         public string? CustomerId { get; set; }
-
-        public virtual Customer? Customer { get; set; }
     }
 }

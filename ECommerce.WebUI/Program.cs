@@ -25,6 +25,8 @@ builder.Services.AddScoped<ICategoryDal, EFCategoryDal>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductDal, EFProductDal>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IFavoritesDal, EFFavoriteDal>();
+builder.Services.AddScoped<IFavoriteService, FavoriteService>();
 
 var conn = builder.Configuration.GetConnectionString("myconn");
 //builder.Services.AddDbContext<NorthwindContext>(

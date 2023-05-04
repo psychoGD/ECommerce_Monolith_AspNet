@@ -7,7 +7,6 @@ namespace App.Entities.Models
     {
         public Customer()
         {
-            Favorites = new HashSet<Favorite>();
             Orders = new HashSet<Order>();
             CustomerTypes = new HashSet<CustomerDemographic>();
         }
@@ -24,7 +23,6 @@ namespace App.Entities.Models
         public string? Phone { get; set; }
         public string? Fax { get; set; }
 
-        public virtual ICollection<Favorite> Favorites { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
 
         public virtual ICollection<CustomerDemographic> CustomerTypes { get; set; }
